@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.bjtu</groupId>
-	<artifactId>SimpleWebApp</artifactId>
+	<groupId>com.sachiel</groupId>
+	<artifactId>SimpleWebSocket</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
 	<properties>
@@ -15,7 +15,7 @@
 		<developer>
 			<id>chongyang</id>
 			<name>chongyang</name>
-			<email>chongyangxue@sohu-inc.com</email>
+			<email>chongyangxue@163.com</email>
 		</developer>
 	</developers>
 

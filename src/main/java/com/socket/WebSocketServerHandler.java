@@ -114,15 +114,15 @@ public class WebSocketServerHandler extends SimpleChannelUpstreamHandler {
         }
         count ++;
         WebSocketServer.hasMsg = true;
-        sendMsgToAll();
+        sendMsgToAll(request);
        /* for(ChannelHandlerContext chc : contexts){
         	chc.getChannel().write(new TextWebSocketFrame(request.toUpperCase() + ", count=" + count));
         }*/
     }
     
-    public void sendMsgToAll(){
+    public void sendMsgToAll(String msg){
     	for(ChannelHandlerContext chc : contexts){
-			chc.getChannel().write(new TextWebSocketFrame("count=" + count));
+			chc.getChannel().write(new TextWebSocketFrame("msg=" + msg + ", count=" + count));
 			System.out.println("Send msg count=" + count);
 		}
     	/*
